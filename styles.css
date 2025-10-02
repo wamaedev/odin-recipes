@@ -12,70 +12,47 @@ body {
   padding: 2.25rem;
 }
 
-
-/* ---------- simple reset (keeps yours but safe to include) ---------- */
-/* * { box-sizing: border-box; margin: 0; padding: 0; }
-html,body { height: 100%; }
-body {
-  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-  -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale;
-  background: linear-gradient(180deg,#f7f8fb 0%, #f1f3f8 100%);
-  color: #1d1d22;
-  line-height: 1.5;
-  padding: 2.25rem;
-} */
-
-/* ---------- design tokens ---------- */
-/* :root{
-  --surface: #ffffff;
-  --muted: #6b6b72;
-  --accent: #6f6cff;
-  --accent-2: #ff7a66;
-  --radius: 14px;
-  --gap: 1rem;
-  --card-shadow: 0 10px 30px rgba(25,25,30,0.06);
-  --max-width: 980px;
-} */
-
-/* ---------- page shell ---------- */
-/* section {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  background: var(--surface);
-  border-radius: calc(var(--radius) + 4px);
-  padding: 2.25rem;
-  box-shadow: var(--card-shadow);
+.landing-page {
   border: 1px solid rgba(18,18,20,0.03);
-} */
+  border-radius: 15px;
+  max-width: 980px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 36px;
+  box-shadow: 0 10px 30px rgba(25,25,30,0.06);
+}
 
-/* ---------- title ---------- */
-/* .page-title {
-  font-size: 2.1rem;
-  font-weight: 700;
+.page-title {
   letter-spacing: -0.02em;
+  font-size: 34px;
+  font-family: Young Serif;
+  font-weight: 700;
   color: #111115;
-  margin-bottom: 1.25rem;
+  margin-bottom: 20px;
   display: inline-block;
-  background: linear-gradient(90deg,var(--accent),var(--accent-2));
+  background: linear-gradient(90deg, #6f6cff, #ff7a66);
+  color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-  color: transparent;
-} */
+}
 
-/* ---------- recipe list (no HTML changes required) ---------- */
-/* section > ul {
+.page-sub {
+  font-size: 20px;
+  font-family: Outfit;
+}
+
+.landing-page > ul {
   list-style: none;
-  margin-top: 1rem;
+  margin-top: 16px;
   display: grid;
-  gap: var(--gap);
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   align-items: start;
   padding: 0;
-} */
+  font-family: Outfit;
+}
 
-/* each item acts like a card link */
-/* section > ul li a {
+.landing-page > ul li a {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -83,44 +60,45 @@ body {
   color: inherit;
   background: linear-gradient(180deg, #ffffff 0%, #fbfbff 100%);
   border-radius: 12px;
-  padding: 1rem 1.1rem;
+  padding: 16px 18px;
   border: 1px solid rgba(18,18,20,0.04);
   box-shadow: 0 6px 18px rgba(25,25,30,0.03);
   transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
   font-weight: 600;
-} */
+}
 
-/* arrow on the right */
-/* section > ul li a::after {
+.landing-page > ul li a::after {
   content: "→";
-  margin-left: 1rem;
+  margin-left: 16px;
   opacity: 0.65;
   transform: translateX(0);
-} */
+}
 
-/* hover & focus */
-/* section > ul li a:hover,
+section > ul li a:hover,
 section > ul li a:focus-visible {
   transform: translateY(-6px);
   box-shadow: 0 18px 40px rgba(25,25,30,0.08);
   border-color: rgba(111,108,255,0.14);
 }
+
 section > ul li a:focus-visible {
   outline: none;
   box-shadow: 0 18px 40px rgba(25,25,30,0.08), 0 0 0 4px rgba(111,108,255,0.12);
-} */
+}
 
-/* small description under page title for future use */
-/* .page-sub { color: var(--muted); margin-top: .5rem; } */
 
-/* ---------- general anchors (for recipe pages too) ---------- */
-/* a { color: var(--accent); text-decoration: none; } */
-/* a:hover { text-decoration: underline; } */
+
+
+
+
+
+
+
 
 /* ---------- responsive adjustments ---------- */
-/* @media (max-width: 640px) {
+@media (max-width: 640px) {
   body { padding: 1rem; }
   .page-title { font-size: 1.5rem; }
   section { padding: 1.25rem; }
   section > ul { grid-template-columns: 1fr; gap: .75rem; }
-} */
+}
