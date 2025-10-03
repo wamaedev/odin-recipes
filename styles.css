@@ -128,11 +128,13 @@ figure {
 
 figure img {
   width: 100%;
-  max-width: 100%; /* 🔧 new: prevents overflow */
-  height: auto;    /* 🔧 new: keeps aspect ratio */
+  max-width: 600px;
+  height: auto;    
   border-radius: 12px;
-  object-fit: cover;
+  /* object-fit: cover; */
   box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  display: block;
+  margin: 0 auto;
 }
 
 figure figcaption {
@@ -146,10 +148,10 @@ figure figcaption {
 /* ---------- Section Blocks ---------- */
 section {
   margin-top: 32px;
-  padding: 20px; /* 🔧 new: adds card-like spacing */
-  background: #fafbff; /* 🔧 subtle background */
-  border-radius: 12px; /* 🔧 rounded corners */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.03); /* 🔧 light shadow */
+  padding: 20px; 
+  background: #fafbff; 
+  border-radius: 12px; 
+  box-shadow: 0 4px 12px rgba(0,0,0,0.03);
   color: #444;
   font-family: Outfit, sans-serif;
 }
@@ -160,7 +162,7 @@ section h2 {
   margin-bottom: 12px;
   color: #2d2d34;
   border-bottom: 2px solid rgba(18,18,20,0.08);
-  padding-bottom: 4px; /* 🔧 spacing under title */
+  padding-bottom: 4px; 
 }
 
 /* ---------- Lists ---------- */
@@ -171,11 +173,11 @@ ul {
 
 ul li {
   margin-bottom: 8px;
-  line-height: 1.6; /* 🔧 improved readability */
+  line-height: 1.6; 
 }
 
 ul li::marker {
-  color: #6f6cff; /* 🔧 purple bullets */
+  color: #6f6cff; 
 }
 
 ol {
@@ -185,24 +187,24 @@ ol {
 
 ol li {
   margin-bottom: 12px;
-  line-height: 1.6; /* 🔧 improved readability */
+  line-height: 1.6; 
 }
 
 ol li::marker {
   font-weight: bold;
-  color: #ff7a66; /* 🔧 orange numbers */
+  color: #ff7a66; 
 }
 
 /* ---------- Paragraphs & Callouts ---------- */
 p {
-  margin-bottom: 16px; /* 🔧 better text rhythm */
+  margin-bottom: 16px; 
   font-size: 16px;
   line-height: 1.7;
 }
 
 p strong, p b {
   display: inline-block;
-  background: #fff0eb; /* 🔧 callout background */
+  background: #fff0eb; 
   color: #ff7a66;
   padding: 2px 6px;
   border-radius: 6px;
