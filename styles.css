@@ -86,12 +86,101 @@ section > ul li a:focus-visible {
   box-shadow: 0 18px 40px rgba(25,25,30,0.08), 0 0 0 4px rgba(111,108,255,0.12);
 }
 
+/* ---------- Banana Bread Recipe Page ---------- */
+
+article {
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(25,25,30,0.06);
+}
+
+header {
+  margin-bottom: 24px;
+}
+
+header nav a {
+  display: inline-block;
+  margin-bottom: 16px;
+  font-size: 15px;
+  color: #6f6cff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+header nav a:hover {
+  color: #ff7a66;
+}
+
+h1 {
+  font-family: Young Serif, serif;
+  font-size: 36px;
+  margin-bottom: 24px;
+  background: linear-gradient(90deg, #6f6cff, #ff7a66);
+  color: transparent;
+  background-clip: text;
+  text-align: center;
+}
+
+figure {
+  margin: 24px 0;
+}
+
+figure img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+figure figcaption {
+  font-family: Outfit;
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  margin-top: 8px;
+} 
 
 
+section {
+  margin-top: 32px;
+}
 
+section h2 {
+  font-family: Young Serif;
+  font-size: 24px;
+  margin-bottom: 12px;
+  color: #2d2d34;
+  border-bottom: 2px solid rgba(18,18,20,0.08);
+}
 
+section {
+  margin: 16px;
+  color: #444;
+  font-family: Outfit;
+}
 
+.h3-ingredients-1 {
+  font-family: Young Serif;
+  border-bottom: 2px solid rgba(18,18,20,0.08);
+}
 
+ul {
+  padding-left: 24px;
+  margin-bottom: 24px;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+ol {
+  padding-left: 24px;
+}
+
+ol li {
+  margin-bottom: 12px;
+} 
 
 
 
